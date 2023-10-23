@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question Answering System</title>
+</head>
+<body>
+    <h1>Question Answering System</h1>
+    <form method="POST">
+        <label for="question">Enter your question:</label>
+        <input type="text" name="question" id="question" value="{{ user_question }}" required>
+        <button type="submit">Search</button>
+    </form>
+    <br>
+    <div>
+        <h2>Answer:</h2>
+        <p>{{ answer }}</p>
+    </div>
+</body>
+</html>
